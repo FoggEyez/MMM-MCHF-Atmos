@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "module": "MMM-MCHF-Atmos",
+  "title": "Mischief Atmos · Dynamic weather",
+  "recommendedPosition": "fullscreen_above",
+  "singleInstance": true,
+  "requires": [],
+  "supportedSettings": [
+    "source",
+    "locationConfigured",
+    "latitude",
+    "longitude",
+    "weatherInstance",
+    "maxAgeSeconds",
+    "pollSeconds",
+    "intensity",
+    "motion",
+    "showSnow",
+    "showFrost",
+    "showRain",
+    "showHeat",
+    "showThunder",
+    "lightning",
+    "frostBelowC",
+    "heatAboveC",
+    "edgeWidth",
+    "clearZones"
+  ]
+}

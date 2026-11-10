@@ -1,0 +1,30 @@
+{
+  "name": "mmm-mchf-atmos",
+  "version": "0.1.0",
+  "description": "Mischief Atmos: local animated weather atmosphere from fresh current observations.",
+  "license": "MIT",
+  "author": "FoggEyez",
+  "keywords": [
+    "magicmirror",
+    "magicmirror-module",
+    "mischief",
+    "weather",
+    "snow",
+    "rain",
+    "animation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FoggEyez/MMM-MCHF-Atmos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FoggEyez/MMM-MCHF-Atmos/issues"
+  },
+  "homepage": "https://github.com/FoggEyez/MMM-MCHF-Atmos#readme",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.cjs"
+  }
+}
