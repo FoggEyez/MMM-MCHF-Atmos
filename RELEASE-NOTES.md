@@ -1,3 +1,5 @@
-# 0.1.0 public preview
+# 0.1.1 public preview
 
-Mischief Atmos is a standalone module for current-weather edge effects. It listens to an existing native current-weather module or optionally fetches current Open-Meteo data. Includes configuration guidance, unit/freshness checks, preview and tests. Physical-device performance remains to be verified. No video generation or external artwork service is required.
+Preserves suspension through visibility changes and renderer rebuilds; actionable source-specific setup checks in the companion.
+
+Includes updated migration and troubleshooting guidance. Manual configuration remains supported; the companion is optional. Preview status and device/provider limitations remain documented in VALIDATION.md.

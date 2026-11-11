@@ -63,3 +63,7 @@ Use `animateIn: 'fadeIn'` at the module-entry level if desired. As a full-screen
 Original Mischief procedural artwork and rendering; MIT. Tests cover conditions, stale/future data, temperature units and provider-code parsing. Preview values are synthetic; physical-device frame rate and independent installation remain to be verified. One instance per mirror is supported. No analytics or personal data collection is added.
 
 Run `npm ci` and `npm test`. Report bugs with your platform, MagicMirror version and minimal configuration with private information removed. Review releases, back up private config and use `git pull --ff-only` before restarting to update. Disable/remove the config entry to stop the module.
+
+## Help and troubleshooting
+
+See [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for common states and setup checks. [Open an issue](https://github.com/FoggEyez/MMM-MCHF-Atmos/issues) with a minimal configuration that has secrets removed.

@@ -7,5 +7,5 @@ Module.register('MMM-MCHF-Atmos',{
  getDom(){if(!this.root){this.root=document.createElement('div');this.root.className='mischief-atmos';this.root.setAttribute('aria-hidden','true');}return this.root;},
  notificationReceived(name,payload,sender){if(name==='DOM_OBJECTS_CREATED'){if(!this.renderer)this.renderer=new MischiefAtmosRenderer(this.getDom());this.refresh();clearInterval(this.timer);this.timer=setInterval(this.refresh,30000);}if(name==='WEATHER_UPDATED'&&this.config.source==='magicmirror'&&sender?.name==='weather'&&sender.config?.type==='current'&&(!this.config.weatherInstance||sender.identifier===this.config.weatherInstance)){const data=MischiefAtmosModel.observation(payload,sender.config.units);if(data){this.sample=data;this.refresh();}}},
  socketNotificationReceived(name,payload){if(name==='ATMOS_DATA'&&this.config.source==='open-meteo'){this.sample=payload;this.refresh();}},
- suspend(){this.paused=true;clearInterval(this.timer);this.renderer?.pause(true);},resume(){this.paused=false;this.renderer?.pause(false);this.refresh();clearInterval(this.timer);this.timer=setInterval(this.refresh,30000);}
+ suspend(){this.paused=true;clearInterval(this.timer);this.renderer?.setSuspended(true);},resume(){this.paused=false;this.renderer?.setSuspended(false);this.refresh();clearInterval(this.timer);this.timer=setInterval(this.refresh,30000);}
 });
